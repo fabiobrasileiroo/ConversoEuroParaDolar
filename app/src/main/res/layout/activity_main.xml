@@ -8,21 +8,23 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textDolares"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="62dp"
         android:layout_marginEnd="16dp"
-        android:text="Hello World!"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        android:gravity="center|center_horizontal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonConverter"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConverter" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editEuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="171dp"
         android:ems="10"
+        android:gravity="center|center_horizontal"
         android:hint="Digite seu valor em euro"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,17 +38,17 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="56dp"
         android:text="Converso de euro para dolar"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText" />
+        app:layout_constraintBottom_toTopOf="@+id/editEuro"
+        app:layout_constraintEnd_toEndOf="@+id/editEuro" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonConverter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Converter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/editEuro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
